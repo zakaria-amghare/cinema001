@@ -38,3 +38,8 @@ function our_movies()
     button.replaceWith(ourmovies);
     console.log("hahahha");
 }
+function showForm() 
+{
+    document.getElementById('buy').style.display = 'none';
+    document.getElementById('ticketForm').style.display = 'block';
+}

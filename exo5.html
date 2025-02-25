@@ -8,8 +8,10 @@
     <title>cinema</title>
 </head>
 <body>
-    <h1>cenema</h1>
-    <h2>cosmos</h2>
+    <div id="header">
+        <h1>cenema</h1>
+        <h2>cosmos</h2>
+    </div>
     <button type="button" onclick="our_movies()" id="our_movies">all our movies...</button>
 
     <div id="cont">
@@ -20,17 +22,39 @@
         </div>
         
         <div class="movies" id="movie2">
-        <img src="" alt="psoter2">
+        <img src="dbz.jpg" alt="psoter2">
         <p><span>discreption</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Repellat numquam iusto asperiores sed. Sapiente magnam dignissimos,<br> beatae eveniet laudantium ipsum repudiandae fugit in temporibus sunt tenetur optio delectus provident laborum.</p>
         <button onclick="movie2.see_more()">see more about movie...</button>
         </div>
         
         <div class="movies" id="movie3">
-        <img src="" alt="psoter3">
+        <img src="vegeta.jpg" alt="psoter3">
         <p><span>discreption</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>Repellat numquam iusto asperiores sed. Sapiente magnam dignissimos,<br> beatae eveniet laudantium ipsum repudiandae fugit in temporibus sunt tenetur optio delectus provident laborum.</p>
         <button onclick="movie3.see_more()">see more about movie...</button>
         </div>
     </div>
+
+    <div id="ticket">
+
+        <h4>buy a ticket for <br> a <br> movie:</h4>
+        <button type="button" id="buy" onclick="showForm()">Buy Ticket</button>
+        <div id="ticketForm" style="display:none;">
+        <form method="post" action="exo5.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="movie">Movie:</label>
+            <br>
+            <select id="movie" name="movie">
+                <option value="movie1">Movie 1</option>
+                <option value="movie2">Movie 2</option>
+                <option value="movie3">Movie 3</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     
+</div>
 </body>
 </html>
